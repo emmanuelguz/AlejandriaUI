@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Style.uss?fileID=7433441132597879392&amp;guid=55d08954d419e4a46a8b5cd86c1d3fd7&amp;type=3#Style" />
+    <ui:VisualElement name="bACKGROUND" style="flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:VisualElement name="menubkg" style="height: 188px; width: 327px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgba(1, 71, 238, 0.44); align-items: center; justify-content: flex-end;">
+            <ui:Slider picking-mode="Ignore" label="General" value="0" high-value="20" name="Slider_Gral" low-value="-40" style="width: 279px;" />
+            <ui:Slider picking-mode="Ignore" label="Musica" value="0" high-value="20" name="Slider_Musica" low-value="-40" style="width: 279px;" />
+            <ui:Slider picking-mode="Ignore" label="SFX" value="0" high-value="20" name="Slider_SFX" low-value="-40" style="width: 279px;" />
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="quitbutton" class="button-style" style="height: 23px; width: 127px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
