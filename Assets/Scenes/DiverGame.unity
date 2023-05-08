@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 93861461}
   - component: {fileID: 93861463}
   m_Layer: 5
-  m_Name: UIDocument
+  m_Name: MENU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93861460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -182,10 +182,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 93861460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d6f69eaf693a046827c0eae8f914f9, type: 3}
+  m_Script: {fileID: 11500000, guid: c131fc4e05c510e4198592f7eed32ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gralMixer: {fileID: 24100000, guid: f58b2343674e98047839723e481154ce, type: 2}
 --- !u!1 &340970747
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spritepos: {x: 0, y: 0}
-  _menu: 0
+  menu: {fileID: 93861460}
 --- !u!82 &340970752
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class CursorSprite : MonoBehaviour
 {
     public Vector2 spritepos;
     public bool _menu;
+    public GameObject menu;
     
     void Start()
     {
@@ -16,6 +17,8 @@ public class CursorSprite : MonoBehaviour
         spritepos.y = pos.y - 0.5f;
         transform.position = spritepos;
         _menu = false;
+        menu = GameObject.Find("MENU");
+        menu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,7 +41,7 @@ public class CursorSprite : MonoBehaviour
         {
             _menu = !_menu;
             //Debug.Log("JOTO");
-          //  if (_menu) { GameObject.Find("UIDocument").SetActive(_menu); }
+            menu.GetComponent<UIMain>();
         }
     }
 }

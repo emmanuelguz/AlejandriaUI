@@ -18,7 +18,7 @@ public class UIMain : MonoBehaviour
         mainView = root.Q("StartMenu");
         settingView = root.Q("Settings");
 
-        SetUpStartMenu();
+        
        // SetUpSettingsMenu();
     }
 
@@ -27,12 +27,19 @@ public class UIMain : MonoBehaviour
         UIStart shoMenu = new UIStart(mainView);
         shoMenu.OpenSettings = () => ToggleSettingsMenu(true);
     }
-    //private void SetUpSettingsMenu()
-    //{
-    //    UISettings shoMenu = new UISettings(settingView);
-    //    shoMenu.Back = () => ToggleSettingsMenu(false);
-    //}
-
+    public void SetUpSettingsMenu()
+    {
+        UISettings shoMenu = new UISettings();
+        shoMenu.Back = () => ToggleSettingsMenu(false);
+    }
+    /*   private void Update()
+       {
+           if (Input.GetKeyDown(KeyCode.Escape))
+           {
+               Debug.Log("Entra");
+               SetUpStartMenu();
+           }
+       }*/
     private void ToggleSettingsMenu( bool enable)
     {
         mainView.Display(!enable);

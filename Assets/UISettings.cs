@@ -43,19 +43,6 @@ public class UISettings : MonoBehaviour
             gralMixer.SetFloat("Music", _musica.value);
         }
     }
-    private void SetGralVolume(){
-        gralMixer.SetFloat("General",_gral.value );
-    }
-    private void SetMusicVolume()
-    {
-        gralMixer.SetFloat("Music", _musica.value);
-    }
-
-    private void SetSFXVolume()
-    {
-        gralMixer.SetFloat("SFX", _sfx.value);
-
-    }
 
 }
 
